@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>SenseNet Platform</title>
+	
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="./SenseNet_Files/over.css">
+  	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  	<link rel="stylesheet" href="./SenseNet_Files/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+	<link rel="icon" href="./SenseNet_Files/favicon.ico">
+	<meta name="author" content="labka.cz" />
+	
+	<meta name="description" content="SenseNet platform which is able to measure, parse, and predict data about air polution in industrial region Ostrava" />
+	<meta name="keywords"  content="SenseNet, SensoricNet, Sense Net, Sensoric Net, AI, platform, prediction, parser, neural network, hackerspace, labka.cz, labka, ostrava, hackerspaces, polution, air, environmental, environment"/>
+	
+</head>
+<body>
+
+<!-- Imported floating menu -->
+
+<div class="obal">
+<div class="menu">
+	<iframe src="menu.html" seamless></iframe>
+</div>
+</div>
+
+<!-- Page Content -->
+<div class="celek">
+<h2>O projektu SenseNet</h2>
+<h3>" Kolik odstínů šedi má Ostrava? A dají se měřit? "</h3>
+
+<img src="./SenseNet_Files/mnohosten_s2.png" alt="Graf PM1, PM2.5 a PM10 a dalsi srandy" class="obrR" width="450px">
+
+<p>Nápad postavit platformu sensenet dostal jasné obrysy na ostravském <a href="http://www.nadacevodafone.cz/programy/grantovy-program/podporene-projekty/iot-environhackathon.html">IoT EnvironHackathonu</a>, který pořádala v září 2016 <a href="http://www.nadacevodafone.cz/">Nadace Vodafone</a> ve spolupráci s VŠB-TU Ostrava. Za nápadem stojí "tým Labka.cz" tvořený několika členy našeho <a href="https://labka.cz">ostravského hackerspace</a>, zástupci společnosti Vodafone a Statutárního města Ostrava. Nadace Vodafone podpořila projekt v rámci <a href="https://www.nadacevodafone.cz/programy/grantovy-program/zelene-projekty.html">Zeleného programu</a>, který je financovaný z prodeje recyklovaných telefonů, které zákazníci Vodafonu přinášejí do sběrných boxů na prodejnách.</p>
+
+<h3>Jaký problém jsme se rozhodli řešit?</h3>
+<p>Problém, na kterém jsme postavili náš projekt je nepříznivý stav ovzduší na Ostravsku je způsoben především vysokou koncentrací těžkého průmyslu v regionu, ale také geomorfologickými podmínkami hornoslezské pánve, v níž Ostravsko leží.<br /> 
+Při špatných rozptylových podmínkách, které jsou patrné zejména v zimních měsících, se zde navíc znečištění koncentruje. Pro člověka je vysoce nebezpečná například látka benzo[a]pyren. Ta vstupuje skrze dýchací systém a pokožku hluboko do našeho organismu a vyvolává řadu zdravotních problémů. Mimo jiné má rovněž negativní vliv na vývoj plodu v těle matky a na kvalitu spermií.<br />
+V současné době žádný projekt v regionu neřeší agregaci dat ze všech dostupných zdrojů, včetně lokálních senzorů soukromých vlastníků a dat firem.<br />
+Právě firmy musí ze zákona poskytovat data o znečištění, a to v takové podobě, aby byla využitelná i pro neodborníky případně pro řešitele problému na technologicko-technické úrovni.<br />
+Dlouhodobě se ukazuje, že technologie je schopná řešit problémy životního prostředí nebo na ně alespoň reagovat, což je přesně cílem řešení projektu SenseNet.<br />
+<br />
+Rozhodli  jsme se vyvinout inovační řešení chytré senzorické sítě, která bude sbírat a zpracovávat data  o aktuálním znečištěním ovzduší a další údaje využitelné  k predikci vývoje smogové situace (například dopravní aktivitu v určité části města).<br /></p>
+
+
+<h3>Jak to bude fungovat?</h3>
+<p>Kromě dat poskytnutých třetími stranami vyvíjíme i vlastní senzorické řešení, které nám umožní flexibilně sbírat data i v místech dosud nepokrytých stanicemi měřícími úroveň znečištění ovzduší, ale také vyplnit mezeru v dostupnosti primárních, neplacených a ucelených relevantních dat, která se ukázala být zásadní.<br />
+Naměřená i předzpracovaná data budou přenesena ze senzorických modulů a úložišť třetích stran do databáze pomocí technologie NB-IoT (případně dalších), kde dojde k jejich zpracování pomocí algoritmů  modulu "Neuronové Sítě" a dále budou poskytována pomocí dokumentovaného API, a to jak v nezpracované podobě, tak jako zpracovaná data po průchodu Neuronovou Sítí.<br />
+Výstupem celého projektu ovšem nemá být pouze sběr a parsování dat o kvalitě ovzduší na Ostravsku a jejich zpřśtupnění, ale také predikce budoucího vývoje, na základě které bude možno řídit a ovládat například vzduchotechniku v "inteligentních budovách", případně využívat jinak.<br /></p>
+<br />
+Veřejná část dokumentace projektu: <a href="https://github.com/Labka-cz/SensorNet">https://github.com/Labka-cz/SensorNet</a>
+<br />
+<br />
+<br />
+
+<h2>Nadace Vodafone</h2>
+<h3>"Propojujeme sociální a technologické inovace"</h3>
+
+<a href="http://www.nadacevodafone.cz"><img class="obrL" src="./SenseNet_Files/nadace_vodafone.png" alt="Logo Nadace Vodafone" width="281"></a>
+
+<p>"Nadace Vodafone funguje v České republice již 10 let. Za tuto dobu se dostala na přední místa v hodnocení firemních nadací a patří mezi nejdůležitější podporovatele a investory do technologických sociálních inovací. Posláním Nadace Vodafone je dlouhodobé a strategické propojování aktérů na trhu sociálního kapitálu a zvyšování jejich kapacit k&nbsp;řešení globálních problémů na lokální úrovni. Využijeme všechny dostupné prostředky, včetně mobilních technologií, sítí a know-how společnosti Vodafone, k tomu, aby naše činnost měla co největší pozitivní dopad na kvalitu života lidí v&nbsp;České republice."</p><br />
+<br />
+<p>Více o Nadaci Vodafone <a href="http://www.nadacevodafone.cz/">zde</a>.</p>
+<br />
+<br />
+<br />
+
+<h2>Labka Hackerspace</h2>
+<h3>"Váš oblíbený ostravský Hackerspace "</h3>
+
+<a href="https://labka.cz">
+<img class="obrL" src="./SenseNet_Files/transparent_labka_logo_blue.png" alt="logo labky" width="280px">
+</a>
+
+<p>Hackerspace je forma komunitního projektu založená poprvé někdy v osmdesátých letech minulého století v západním Berlíně komunitou technologických nadšenců, které bavilo vyvíjet, chápat a rozebírat stroje a přístroje a vyvíjet prototypy prvních počítačů a software, jak je dnes známe. Asi vůbec první hackerspace v západním světě byl tedy <a href="https://www.ccc.de/en/">Chaos Computer Club</a> Berlin, nicméně fenomén se brzy začal šířit do celého světa.
+V součastné době je hlavní leader v této oblasti USA se světově proslulými hackerspace, jako je například <a href="https://www.noisebridge.net/">Noise Bridge</a>.<br />
+V ČSSR v době totality podobné aktivity organizovaly instituce jako například Dům Dětí a Mládeže případně Svazarm pod pojmem Stanice Mladých Techniků a Radioamatérů, nicméně po Sametové Revoluci některé "Stanice" přetrvaly, ale později je začaly nahrazovat zájmové organizace zřizované přímo jejich členy právě po vzoru hackerspaces. První Český hackerspace byl Pražský <a href="https://brmlab.cz/">BRMLAB</a>, následoval Brněnský <a href="https://wiki.hackerspaces.org/Base48">Base48</a> a od konce roku 2015 také Ostravská <a href="https://labka.cz">Labka</a>.</p>
+<br />
+<p>Posláním Labky je sdružovat komunitu lidí, kteří mají zájem o vědu a techniku, podporovat vzdělání v této oblasti a na základě komunitní dobrovolné práce rozvíjet technologie v různých oborech zahrnujících například počítačové sítě, operační systémy, hardware, ale také například projekty v oblasti biologie či chemie.<br />
+<br />
+Labka jako taková je zřizována z darů a členských příspěvků, případně grantů a výdělku projektů a školení a to jako zapsaný spolek.</p><br />
+Více o Labce <a href="http://www.labka.cz/">zde</a>.<br />
+
+<!--<img src="./SenseNet_Files/schema.png" alt="schema" class="obrR" width="500px">  -->
+
+<div id="aktualne"></div>
+
+<h2>Aktuální stav projektu</h2>
+Počátek projektu: 1.1.2017<br />
+<p>"V současné době se snažíme nastavit základní směry ve všech částech projektu. Hodně experimentujeme s technologiemi, komunikujeme s dalšími firmami a odborníky a snažíme se najít pro každou část platformy ten nejlepší základ, na kterém budeme dále stavět."</p><br />
+Blog projektu, kde zveřejňujeme novinky nadete na stránkách Labka.cz v hlavn=im menu jako "<a href="https://labka.cz/wiki/doku.php?id=sensenet:sensenet#sensenetproject_blog">SenseNet : Project Blog</a>", RSS blogu je k dispozici <a href="https://labka.cz/wiki/feed.php?mode=list&type=atom&linkto=page&ns=sensenet">zde</a><br />
+
+<!-- taken from CSS https://www.w3schools.com/w3css/4/w3.css -->
+<h3>Návrh infrastruktury</h3>
+	<div class="w3-container w3-red w3-center" style="width:80%">80%</div>
+	<br />	
+
+<h3>Definice a testování přenosu dat</h3>
+	
+	<div class="w3-container w3-red w3-center" style="width:50%">50%</div>
+	<br />	
+
+<h3>Vývoj prototypu měřicího boxu</h3>
+	<!--<div class="w3-light-grey"> -->
+	<div class="w3-container w3-red w3-center" style="width:75%">75%</div>
+	<br />
+	
+<h3>Vývoj algoritmu neuronové sítě</h3>
+	<div class="w3-container w3-red w3-center" style="width:30%">30%</div>
+	<br />
+
+<br />
+<br />
+<br />
+
+<div id="media">
+<h2>MEDIA</h2>
+
+<h3>" Napsali o nás "</h3>
+    <p><a href="https://polar.cz/porady/regionalni-zpravy/regionalni-zpravy-polar-02-03-2017-16-00">https://polar.cz/porady/regionalni-zpravy/regionalni-zpravy-polar-02-03-2017-16-00</a></p>
+	<p><a href="http://www.nadacevodafone.cz/novinky/sensenet.html">http://www.nadacevodafone.cz/novinky/sensenet.html</a></p>
+</div>
+<br />
+<br />
+<br />
+
+
+<div id="team">
+<div id="kontakt">
+<h2>TEAM</h2>
+<h3> " OSM STATEČNÝCH "</h3>
+
+<div id="pagewrap">
+	<header>
+		<div class="text_center">
+		<a href="https://labka.cz/wiki/doku.php?id=user:overdrive"><img src="./SenseNet_Files/tomas_s.png" width="350px"><br />
+		<p>Tomáš Petrů - Manager, infrastruktura</p></a>
+		</div>
+	</header>
+		
+<section id="content">
+		<a href="https://labka.cz/wiki/doku.php?id=user:ivan_ahepjuk"><img src="./SenseNet_Files/pavel_s.png"><br />
+		<p>Pavel Polach - Sensory</p></a>
+
+		<a href="https://labka.cz/wiki/doku.php?id=user:razzy89"><img src="./SenseNet_Files/radek_s.png"><br />
+		<p>Radek Svoboda - AI</p></a>
+</section>
+	
+<section id="middle">
+<br />
+<br />
+	<a href="https://labka.cz/wiki/doku.php?id=user:lichnak"><img src="./SenseNet_Files/adam_s.png" width="291px" height="312px"><br />
+	<p>Adam Lichnovský - AI</p></a>
+
+	<a href="https://labka.cz/wiki/doku.php?id=user:embargo"><img src="./SenseNet_Files/jan_s.png"><br />
+	<p>Jan Bětík - Sítě, Infrastruktura</p></a>
+
+</section>
+
+<aside id="sidebar">
+	<a href="https://labka.cz/wiki/doku.php?id=user:peterbay"><img src="./SenseNet_Files/petr_s.png"><br />
+	<p>Petr Vavřín - Backend, data</p></a>
+
+	<a href="https://labka.cz/wiki/doku.php?id=user:dron"><img src="./SenseNet_Files/jiri_s.png"><br />
+	<p>Jiří Sléžka - Backend</p></a>
+</aside>
+	
+<footer>
+	<div class="text_center">
+	<a href="https://labka.cz/wiki/doku.php?id=user:eva"><img src="./SenseNet_Files/eva_s.png"><br />
+	<p>Eva Klepáčová - Public relations</p></a>
+	</div>
+</footer>
+</div>
+
+
+
+<h2>Kontakty</h2>
+
+<a href="https://labka.cz/wiki/doku.php?id=user:overdrive">Tomáš Petrů</a><br />
+Telefon: +00 420 721 007 507 <br />
+Email: tpetru@labka.cz<br />
+Web: <a href="https://labka.cz">https://labka.cz</a><br />
+Facebook: <a href="https://https://www.facebook.com/labka.cz">https://https://www.facebook.com/labka.cz</a><br />
+
+</div>
+</div>
+</div>
+</body>
+</html>
