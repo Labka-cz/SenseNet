@@ -1,0 +1,245 @@
+/* 
+written mostly by Over@labka.cz, 3 colum design is adapted version from https://codepen.io        
+last update: 1 Jun 2017
+palete taken from: http://paletton.com/#uid=13L0u0kllllaFw0g0qFqFg0w0aF
+fonts designed by: http://www.cssfontstack.com/Arvo
+license: MIT
+INVERTED VERSION: czech flag colourscheme, 0.1
+ */
+
+/* main definition: background an foregrount colour, font family */
+/* in menu, you should change background color same as in body, if some include is used */
+
+body {
+    	background-size: 10px 10px;
+    	background-color : #030F2C;
+    	/* uncomment this to get grid on background
+    	background-image: linear-gradient(to right, #162a4f  1px, transparent 1px), linear-gradient(to bottom, #162a4f 1px, transparent 1px);
+    	*/
+	color: #7887AB;
+	font-size: 12pt; 
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif; 
+}
+
+/*firebrick*/
+h1{color : firebrick; 
+	font-family: Arvo;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;}
+h2{color : firebrick; 
+	font-family: Arvo;
+	font-size:16pt; 
+	font-style: normal;
+	font-variant: normal;
+	margin: 10px 0 10px 0;}
+h3{color : firebrick; 
+	font-family: Arvo;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 15.4px;}
+h4{color : firebrick;  
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-size:10pt; margin: 10px 0 10px 0;}  
+
+a:link    {color: #94A0BE ; text-decoration:none}
+a:visited {color: #94A0BE; text-decoration:none}
+a:hover   {color: firebrick ; text-decoration:none}
+
+
+/* formating of pictures : L = left, R = right, C = center, no borders, floating text around */
+.obrL   {float : left; margin : 0 5px 0 0; border: 0px solid}
+.obrR   {float : right; margin : 0 5px 0 0; border: 0px solid }
+.obrC   {float : center; margin : 20px 5px 20px 0; border: 0px solid }
+
+/* ============= floating menu hack + invisible iFrame ugly =============
+logic: menu must be inside of obal, it is causing floating functional in Firefox and advanced, and static in
+MSIE and older browser. Not tested if it is adaptive design */
+
+.menu { background-color : #030F2C ; 
+	font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+	font-size: 10pt; 
+	/*border: none;*/
+	border: solid;  
+        border-width: 0px 1px 0px 0px; 
+	border-color: #4F628E;
+        padding: 2px;
+        margin:   3px;
+        position: fixed; 
+	top: 0; 
+	right: 87%; 
+	left: 0;
+	bottom: 1%;
+	}
+
+.obal { border: none;  
+        border-width: 1px;
+	position: fixed; 
+	top: 0; 
+	width: 23%; 
+	height: 100%;
+	bottom: 40%;
+	}
+
+/* border-less iFrame, where seamless is not supported */
+iframe[seamless] {
+	border: none;
+	height: 100%;
+	width: 100%;
+	margin:0; 
+	padding:0; 
+	overflow:hidden;
+}
+
+.text_center {text-align: center;}
+
+/* ============= floating menu hack + invisible iFrame ugly ============= */
+	
+	
+	
+/* main part, where most of text should be - not tested how adaptive it is */		
+.celek { border: none;
+	/* border: solid;  
+        border-width: 1px; */
+        padding: 10px; 
+        margin:  3px;
+        position: absolute; top: 0; left: 13%; right:0%;
+        }
+.usek {
+        color: #D0D0D0 ; 
+        border:solid; 
+        border-width: 0px 0px 0px 0px;
+        padding: 0px; 
+        margin: 0px 0px 30px 0px;
+        position: relative; top:auto; left: auto; right:auto;
+        }
+
+
+/* 3columns responsive design */
+/* STRUCTURE */
+#pagewrap {
+	padding: 5px;
+	width: 960px;
+	margin: 20px auto;
+}
+header {
+	clear: both;
+	padding: 0 15px;
+}
+#content {
+	width: 290px;
+	float: left;
+	padding: 5px 15px;
+}
+
+#middle {
+	width: 294px; /* Account for margins + border values */
+	float: left;
+	padding: 5px 15px;
+	margin: 0px 5px 5px 5px;
+}
+
+#sidebar {
+	width: 270px;
+	padding: 5px 15px;
+	float: left;
+}
+footer {
+	clear: both;
+	padding: 0 15px;
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+	
+	#pagewrap {
+		width: 94%;
+	}
+	#content {
+		width: 41%;
+		padding: 1% 4%;
+	}
+	#middle {
+		width: 41%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		float: right;
+	}
+	
+	#sidebar {
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+	}
+
+	header, footer {
+		padding: 1% 4%;
+	}
+}
+
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+
+	#content {
+		width: auto;
+		float: none;
+	}
+	
+	#middle {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+	}
+	
+	#sidebar {
+		width: auto;
+		float: none;
+	}
+
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+
+	header {
+		height: auto;
+	}
+	h1 {
+		font-size: 2em;
+	}
+	#sidebar {
+		display: none;
+	}
+
+}
+
+
+#content {
+/*	background: #f8f8f8; */
+}
+#sidebar {
+/*	background: #f0efef; */
+}
+header, #content, #middle, #sidebar {
+	margin-bottom: 5px;
+}
+
+#pagewrap, header, #content, #middle, #sidebar, footer {
+/*	border: solid 1px #ccc; */
+}
+
+/* end of 3 columns responsible design */
+
+
+
+
